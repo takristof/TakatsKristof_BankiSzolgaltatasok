@@ -15,4 +15,8 @@ public abstract class Szamla extends BankiSzolgaltatas{
         }
     }
     public abstract boolean kivesz(double osszeg);
+
+    protected void setEgyenleg(double osszeg) {
+        this.egyenleg = osszeg;
+    }
 }
