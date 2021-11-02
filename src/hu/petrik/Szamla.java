@@ -19,4 +19,7 @@ public abstract class Szamla extends BankiSzolgaltatas{
     protected void setEgyenleg(double osszeg) {
         this.egyenleg = osszeg;
     }
+    public Kartya ujKartya(String kartyaSzam){
+        return new Kartya(this.getTulajdonos(), this, kartyaSzam);
+    }
 }
